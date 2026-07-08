@@ -5,7 +5,7 @@
 
 body{
     background:#000000;
-    color:white;
+    color:rgb(255, 255, 255);
     font-family:"Montserrat",sans-serif;
 }
 
@@ -90,26 +90,22 @@ button {
     line-height: 1.2rem;
 }
 
-.skill-container{
-    display:flex;
-    align-items:center;
-    gap:1rem;          
-    width:90%;
-    margin:3rem auto;
+.skill-container {
+    display: flex;
+    background-image: url(assets/Developer.png);
+    background-size: cover;
 }
 
-.developer{
-    flex:1;
-}
-
-.developer img{
+/* .developer img{
     width:100%;
     max-width:450px;
     display:block;
-}
+} */
 
 .skill-info{
     flex:1;
+    opacity: 1;
+    z-index: 10;
 }
 
 .skill{
