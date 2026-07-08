@@ -1,128 +1,86 @@
-*{
+* {
     margin:0;
+    padding: 0;
     box-sizing:border-box;
 }
 
-body{
-    background:#000000;
-    color:rgb(255, 255, 255);
-    font-family:"Montserrat",sans-serif;
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
 }
 
 img {
     width: 100%;
-    border-radius: 0.3rem;
 }
 
 .nav {
-    background-color: rgb(3, 2, 2);
-    height: 40px;
     width: 100%;
+    height: 40px;
+    background-color: black;
     position: fixed;
     top: 0;
-    z-index: 1000;
     display: flex;
-    padding: 2px 2px 0 2px;
-    align-items: center;
+    z-index: 1000;
 }
 
-.logo {
-    width: 51%;
+.nav .logo {
+    width: 60%;
 }
 
-.nav p {
+.nav .logo p {
     display: inline-block;
 }
 
-.sections ul {
-    list-style: none;
-    display: flex;
+.nav_opt {
+    position: absolute;
+    right: 0;
 }
 
-li a {
+.nav_opt ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_opt ul li {
+    list-style: none;
+}
+
+.nav_opt ul li a {
     text-decoration: none;
     color: white;
-    margin-left: 30px;
 }
 
-.hero-section {
-    width: 100%;
+.hero_section {
+    margin-top: 50px;
     display: flex;
-    margin-top: 4rem;
+    background-color: black;
 }
 
-.littleInfo {
-    flex: 1;
+.little_info {
+    width: 60%;
 }
 
-.littleInfo h2 {
-    padding-left: 10rem;
+.hello {
+    margin: 1px 0 8px 100px;
 }
 
-.littleInfo p {
-    padding-left: 10rem;
-    margin-top: 1.5rem;
+.little_info p {
+    margin: 2px 0 80px 100px;
 }
 
-.work {
-    margin: 2.5rem 0 0 10rem;
+.buttons {
+    margin-left: 100px;
+    display: flex;
+    gap: 50px;
 }
 
 button {
-    padding: 1rem;
-    border-radius: 0.4rem;
+    padding: 15px;
+    border-radius: 5px;
 }
-
 
 .ayan {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
+    width: 60%;
 }
 
-.ayan img {
-    width: 95%;
-}
-
-.about {
-    margin: 1rem;
-    letter-spacing: 0.2px;
-    line-height: 1.2rem;
-}
-
-.skill-container {
-    display: flex;
-    background-image: url(assets/Developer.png);
-    background-size: cover;
-}
-
-/* .developer img{
-    width:100%;
-    max-width:450px;
-    display:block;
-} */
-
-.skill-info{
-    flex:1;
-    opacity: 1;
-    z-index: 10;
-}
-
-.skill{
-    border:1px solid #3a3a3a;
-    border-radius:15px;
-    padding:20px;
-    margin-bottom:20px;
-}
-
-.project {
-    border:1px solid #3a3a3a;
-    border-radius:15px;
-    padding:20px;
-    margin-bottom:20px;
-}
-
-h4 {
-    width: 20%;
-    padding-left: 1rem;
-}
